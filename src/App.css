@@ -1,0 +1,161 @@
+.app{
+  min-width: 1024px;
+  max-width: 1280px;
+  margin:auto;
+}
+.appHeader{
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+.loader{
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  grid-column-start:1;
+  grid-column-end:6;
+  grid-row-start:1;
+  grid-row-end:1;
+}
+
+.inputBox{
+  font-size: 1.2rem;
+  height: 1.2rem;
+  min-width: 200px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #aaa;
+}
+
+.btnDefault {
+  font-size: 1.2rem;
+  height: 2.2rem;
+  margin-left: 10px;
+  background-color: #666;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #eee;
+  width: 1280px;
+}
+
+.grid-item {
+  background-color: #e7e7e7;
+  margin: 3px;
+  font-size: 20px;
+  text-align: center;
+  min-height: 180px;
+  
+}
+
+.grid-slot-big{
+  grid-column-start:1;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:3;
+  height: 440px;
+  
+}
+
+.grid-slot-medium{
+  grid-column-start:5;
+  grid-column-end:6;
+  grid-row-start:1;
+  grid-row-end:3;
+  height: 440px;
+
+}
+
+.grid-slot-standard{
+  height: 220px;
+
+}
+
+.slot-header-container{
+  position:relative;
+  top:0px;
+}
+
+.slot-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 6px;
+  background-color: #aaa;
+}
+
+.single-height{
+  height: 170px;
+  overflow-y: auto;
+  background-color: #e0e0e0;
+}
+
+.double-height{
+  height: 400px;
+  overflow-y: auto;
+  background-color: #e0e0e0;
+}
+
+/* table data */
+.display-flex{
+  display: flex;
+}
+
+th{
+  font-size: 0.75rem;
+  padding: 5px 0px;
+  
+}
+td{
+  font-size: 0.75rem;
+  padding: 5px 0px;
+  
+}
+
+.textLeft{
+  text-align:left;
+  padding-left: 5px;
+}
+
+.textRight{
+  text-align:right;
+}
+
+.textCenter{
+  text-align:center;
+}
+
+
+/* colors for icons */
+.white{
+  color:white;
+}
+
+.yellow{
+  color:rgb(244, 183, 30);
+}
+
+.green{
+  color:rgb(9, 143, 63);
+}
+
+.red{
+  color:rgb(231, 49, 17);
+}
+
+.bg-yellow{
+  background-color:rgb(243, 187, 4);
+}
+
+.bg-green{
+  background-color:rgb(9, 143, 63);
+}
+
+.bg-red{
+  background-color:rgb(231, 49, 17);
+}
+
