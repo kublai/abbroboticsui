@@ -5,7 +5,11 @@ import DisplaySlot from './DisplaySlot';
 
 
 
+
 export default function App() {
+
+  const serverUrl = import.meta.env.VITE_DATA_SERVER + ":" + import.meta.env.VITE_DATA_SERVER_PORT;
+  console.log(serverUrl );
   const [partNumber, setPartNumber] = useState(1);
   const [data, setData] = useState('');
   const [slots, setSlots] = useState([]);
@@ -16,7 +20,7 @@ export default function App() {
     if(wsconn.ws !== undefined){  //only one connection per user allowed
       return;
     };
-    wsconn.ws = new WebSocket("wss://localhost:3000");
+    wsconn.ws = new WebSocket(serverUrl);
     wsconn.ws.onmessage = function(event){
       const newData = JSON.parse(event.data);
       if (newData.features !== undefined ){
