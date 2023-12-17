@@ -17,7 +17,7 @@ export default function App() {
 
   //onMount
   useEffect(()=>{
-    if(wsconn.ws !== undefined){  //only one connection per user allowed
+    if(wsconn.ws !== undefined ){  //only one connection per user allowed
       return;
     };
     wsconn.ws = new WebSocket(serverUrl);

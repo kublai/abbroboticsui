@@ -89,13 +89,13 @@
 }
 
 .single-height{
-  height: 170px;
+  height: 144px;
   overflow-y: auto;
   background-color: #e0e0e0;
 }
 
 .double-height{
-  height: 400px;
+  height: 370px;
   overflow-y: auto;
   background-color: #e0e0e0;
 }
@@ -129,6 +129,10 @@ td{
   text-align:center;
 }
 
+.table-footer{
+  background-color: #ccc;
+}
+
 
 /* colors for icons */
 .white{
@@ -145,6 +149,10 @@ td{
 
 .red{
   color:rgb(231, 49, 17);
+}
+
+.grey{
+  color:#666;
 }
 
 .bg-yellow{

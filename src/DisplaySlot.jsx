@@ -22,7 +22,7 @@ export default function DisplaySlot({classNameMain, classNameSlot, featureData})
   if (bigSlotFlag){
     return (
       <div className={classNameMain}>
-        <><div className="slot-header-container">
+        <div className="slot-header-container">
           <div className={`slot-header `+ slotHeaderBg }>
             <div><span className="material-symbols-outlined white">circle</span></div>
             <div className="white"> {featureData.name} </div>
@@ -33,9 +33,9 @@ export default function DisplaySlot({classNameMain, classNameSlot, featureData})
           <table>
             <thead>
               <tr>
-                <th style={{ "width": "65px", "height": "18px"}}>Control</th>
-                <th style={{ "width": "65px", "height": "18px" }}>Dev</th>
-                <th style={{ "width": "108px", "height":  "18px" }} colSpan={2}>Dev Out Tol</th>
+                <th style={{ "width": "65px"}}>Control</th>
+                <th style={{ "width": "65px" }}>Dev</th>
+                <th style={{ "width": "108px"}} colSpan={2}>Dev Out Tol</th>
               </tr>
             </thead>
             <tbody>
@@ -45,22 +45,23 @@ export default function DisplaySlot({classNameMain, classNameSlot, featureData})
           <table>
             <thead>
               <tr>
-                <th style={{ "width": "65px", "height": "18px" }}>Control</th>
-                <th style={{ "width": "65px", "height": "18px" }}>Dev</th>
-                <th style={{ "width": "108px", "height": "18px" }} colSpan={2}>Dev Out Tol</th>
+                <th style={{ "width": "65px" }}>Control</th>
+                <th style={{ "width": "65px" }}>Dev</th>
+                <th style={{ "width": "108px"}} colSpan={2}>Dev Out Tol</th>
               </tr>
             </thead>
             <tbody>
               {controlsList2}
             </tbody>
           </table>
-        </div></>       
+        </div>
+        <div className="table-footer"><span class="material-symbols-outlined grey">more_horiz</span></div>      
       </div>
     );
   }else{
     return (
       <div className={classNameMain}>
-        <><div className="slot-header-container">
+        <div className="slot-header-container">
           <div className={`slot-header `+ slotHeaderBg }>
             <div><span className="material-symbols-outlined white">circle</span></div>
             <div className="white"> {featureData.name} </div>
@@ -71,16 +72,17 @@ export default function DisplaySlot({classNameMain, classNameSlot, featureData})
           <table>
             <thead>
               <tr>
-                <th style={{ "width": "65px", "height": "18px" }}>Control</th>
-                <th style={{ "width": "65px", "height": "18px" }}>Dev</th>
-                <th style={{ "width": "108px", "height": "18px" }} colSpan={2}>Dev Out Tol</th>
+                <th style={{ "width": "65px" }}>Control</th>
+                <th style={{ "width": "65px" }}>Dev</th>
+                <th style={{ "width": "108px" }} colSpan={2}>Dev Out Tol</th>
               </tr>
             </thead>
             <tbody>
               {controlsList1}
             </tbody>
           </table>
-        </div></>       
+        </div>
+        <div className="table-footer"><span class="material-symbols-outlined grey">more_horiz</span></div>      
       </div>
     );
   }
@@ -114,10 +116,10 @@ function generateRows(group){
       statusColor = "yellow";
     }
     return <tr key={index}>
-      <td className="textLeft" style={{"width":"62px",  "height": "35px"}}>{control}</td>
-      <td className="textRight" style={{"width":"62px",  "height": "35px"}}>{dev}</td>
-      <td className="textRight" style={{"width":"62px",  "height": "35px"}}>{dot}</td>
-      <td className="textCenter" style={{"width":"42px",  "height": "35px"}}><span className={"material-symbols-outlined " + statusColor}>{status}</span></td> 
+      <td className="textLeft" style={{"width":"62px" }}>{control}</td>
+      <td className="textRight" style={{"width":"62px" }}>{dev}</td>
+      <td className="textRight" style={{"width":"62px" }}>{dot}</td>
+      <td className="textCenter" style={{"width":"42px"}}><span className={"material-symbols-outlined " + statusColor}>{status}</span></td> 
     </tr>
   });
 }
